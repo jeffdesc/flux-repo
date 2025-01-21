@@ -1,0 +1,15 @@
+apiVersion: source.toolkit.fluxcd.io/v1beta2
+kind: HelmRelease
+metadata:
+  name: kafka
+  namespace: default
+spec:
+  interval: 5m0s
+  chart:
+    spec:
+      chart: kafka
+      sourceRef:
+        kind: HelmRepository
+        name: bitnami-oci
+        namespace: default
+      interval: 1m
