@@ -1,7 +1,7 @@
 apiVersion: source.toolkit.fluxcd.io/v1beta2
 kind: HelmRepository
 metadata:
-  name: bitmani-oci
+  name: bitnami-oci
   namespace: default
 spec:
   type: oci
