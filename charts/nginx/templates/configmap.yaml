@@ -1,3 +1,4 @@
+{{ if .Values.indexHtml }}
 apiVersion: v1
 kind: ConfigMap
 metadata:
@@ -5,3 +6,4 @@ metadata:
 data:
   index.html: |
     {{ .Values.indexHtml | nindent 4 }}
+{{- end -}}
