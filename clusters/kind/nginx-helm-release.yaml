@@ -17,4 +17,4 @@ spec:
   values:
     indexHtml: |-
       <h1>My custom line!</h1>
-      <p>Very welcome!</p>
+      <p>Very welcome as well!</p>
