@@ -13,6 +13,8 @@ spec:
         name: flux-system
         namespace: flux-system
       interval: 1m
+      reconcileStrategy: Revision
   values:
     indexHtml: |-
-      <p>My custom line!</p>
+      <h1>My custom line!</h1>
+      <p>Very welcome!</p>
