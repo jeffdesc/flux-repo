@@ -104,7 +104,7 @@ autoscaling:
   # targetMemoryUtilizationPercentage: 80
 
 # Additional volumes on the output Deployment definition.
-volumes: #[]
+volumes:
   - name: html
     configMap:
       name: {{ .Release.Name }}-index-html
@@ -114,7 +114,7 @@ volumes: #[]
 #     optional: false
 
 # Additional volumeMounts on the output Deployment definition.
-volumeMounts: #[]
+volumeMounts:
   - name: html
     mountPath: "/usr/share/nginx/html"
 
