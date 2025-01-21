@@ -16,10 +16,10 @@ metadata:
 spec:
   interval: 1m
   chart:
-  spec:
-    chart: nginx-ingress-2
-    sourceRef:
-      kind: HelmRepository
-      name: nginx-repo
-      namespace: default
-    interval: 1m
+    spec:
+      chart: nginx-ingress
+      sourceRef:
+        kind: HelmRepository
+        name: nginx-repo
+        namespace: default
+      interval: 1m
