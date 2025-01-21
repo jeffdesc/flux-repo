@@ -13,3 +13,6 @@ spec:
         name: flux-system
         namespace: flux-system
       interval: 1m
+  values:
+    indexHtml: |-
+      <p>My custom line!</p>
