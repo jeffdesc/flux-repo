@@ -8,7 +8,19 @@ spec:
   sourceRef:
     kind: GitRepository
     name: flux-system
-  path: ./apps/staging
+  path: ./apps/production
   prune: true
   wait: true
   timeout: 5m0s
+  patches:
+    - patch: |
+        - op: add
+          path: /spec/values/ingress/hosts/-
+          value:
+            host: podinfo.production
+            paths:
+              - path: "/"
+                pathType: Prefix
+      target:
+        kind: HelmRelease
+        name: podinfo

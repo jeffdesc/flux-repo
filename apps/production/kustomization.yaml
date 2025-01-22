@@ -4,3 +4,8 @@ namespace: default
 resources:
   - ../base/kafka
   - ../base/mysql
+  - ../base/podinfo
+patches:
+  - path: podinfo-values.yaml
+    target:
+      kind: HelmRelease
