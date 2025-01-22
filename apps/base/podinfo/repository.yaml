@@ -4,6 +4,5 @@ metadata:
   name: stefanprodan
   namespace: default
 spec:
-  type: http
   interval: 5m0s
   url: https://stefanprodan.github.io
