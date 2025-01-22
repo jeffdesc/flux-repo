@@ -4,6 +4,9 @@ metadata:
   name: podinfo
   namespace: default
 spec:
+  install:
+    remediation:
+      retries: -1
   interval: 5m
   chart:
     spec:
