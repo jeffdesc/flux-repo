@@ -10,7 +10,7 @@ spec:
       chart: podinfo
       sourceRef:
         kind: HelmRepository
-        name: stefanprodan
+        name: podinfo
         namespace: default
       interval: 1m
   values:
